@@ -21,6 +21,7 @@ public class LanguageAction extends Action {
                                  HttpServletResponse response) {
         LanguageForm languageForm = (LanguageForm) form;
         Locale locale = null;
+        // Adding Language
         if (("french").equals(languageForm.getLanguage())) {
             locale = Locale.FRENCH;
         }
